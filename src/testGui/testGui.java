@@ -1,22 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package gui;
-
-/**
- *
- * @author P51
- */
+package testGui;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class Gui {
-
-    /**
-     * @param args the command line arguments
-     */
+public class testGui {
     public static void main(String[] args) {
         // Create the main frame
         JFrame frame = new JFrame("JFrame Example");
@@ -59,5 +46,4 @@ public class Gui {
  
         frame.setVisible(true);
     }
-    
 }
