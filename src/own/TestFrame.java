@@ -3,6 +3,7 @@ package own;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Scanner;
@@ -18,6 +19,8 @@ import java.util.Vector;
  * A JTable is also added to demonstrate table usage.
  * 
  * Rows can be added to the JTable using a Scanner for dynamic input.
+ * 
+ * A TableRowSorter is added to enable sorting of the JTable.
  * 
  * @author P51
  */
@@ -102,6 +105,10 @@ public class TestFrame extends JFrame {
         model.addRow(new Object[]{"SV08", "Pham Van Tuan", "CNTT8", 3.8});
         model.addRow(new Object[]{"SV09", "Nguyen Thi Thuy", "CNTT9", 3.6});
         model.addRow(new Object[]{"SV10", "Tran Van Thanh", "CNTT10", 3.4});
+
+        // Add TableRowSorter to the JTable
+        TableRowSorter<DefaultTableModel> sorter = new TableRowSorter<>(model);
+        table.setRowSorter(sorter);
 
         JScrollPane tableScrollPane = new JScrollPane(table);
         panel3.add(tableScrollPane, BorderLayout.CENTER);
