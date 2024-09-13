@@ -72,9 +72,9 @@ public class Employee {
     }
     
 }
-class compareByTime implements Comparator<Employee> {
+class CompareByTime implements Comparator<Employee> {
     @Override
     public int compare(Employee a, Employee b) {
-        return Long.compare(b.getDate().getTime(), a.getDate().getTime());
+        return Long.compare(a.getDate().getTime(), b.getDate().getTime());
     }
 }
