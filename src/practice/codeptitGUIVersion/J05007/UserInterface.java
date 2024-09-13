@@ -4,10 +4,19 @@
  */
 package practice.codeptitGUIVersion.J05007;
 
+/*
+Import libraries
+*/
+import javax.swing.*;
+import java.awt.*;
 /**
  *
  * @author P51
  */
-public class UserInterface {
+public class UserInterface extends JFrame{
     
+    
+    public static void main(String[] args) {
+        
+    }
 }
